@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: rv-couros-tcc
+    runtime: node
+    plan: free
+    region: virginia
+    autoDeployTrigger: off
+    buildCommand: corepack pnpm install --frozen-lockfile --prod=false && corepack pnpm check && corepack pnpm build:render
+    startCommand: node dist/render.js
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 22.22.0
+      - key: NODE_ENV
+        value: production
+      - key: HOST
+        value: 0.0.0.0
+      - key: OPENAI_MODEL
+        value: gpt-5.6-luna
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: DEMO_USER
+        value: orientador
+      - key: DEMO_PASSWORD
+        generateValue: true
+      - key: DEMO_AI_REQUEST_LIMIT
+        value: "60"

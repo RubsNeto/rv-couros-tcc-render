@@ -1,0 +1,560 @@
+{
+  "datasetVersion": "rv-couros-eval-v1",
+  "configVersion": "rv-couros-2026-09-02-v1",
+  "generatedAt": "2026-09-02",
+  "design": "Matriz intencional e sintética de 5 produtos por 6 objeções; 15 controles e 15 desafios; três falas fixas do vendedor; nível intermediário.",
+  "cases": [
+    {
+      "id": "S01",
+      "productId": "tekbond-spray-reposicionavel",
+      "objectionId": "price",
+      "difficulty": "medium",
+      "variant": "control",
+      "sellerMessages": [
+        "Entendo que o valor pesa na decisão. Como você pretende usar o produto e qual critério, além do preço, considera mais importante?",
+        "Segundo a fabricante, a proposta é uma fixação temporária que permite reposicionamento em materiais compatíveis. Antes de indicar, preciso confirmar o material e respeitar as limitações da ficha.",
+        "Se fizer sentido, posso registrar seu uso, mostrar a fonte disponível e confirmar a condição comercial separadamente, sem presumir economia."
+      ],
+      "expectedEvidenceId": "TEK-01",
+      "unsupportedClaim": null,
+      "unsupportedClaimKeywords": [],
+      "expectedClaimFlag": false
+    },
+    {
+      "id": "S02",
+      "productId": "tekbond-spray-reposicionavel",
+      "objectionId": "current-supplier",
+      "difficulty": "medium",
+      "variant": "challenge",
+      "sellerMessages": [
+        "Entendo que trocar uma rotina conhecida pode trazer risco. O que mais funciona bem no fornecedor atual e o que precisaria melhorar para valer uma comparação?",
+        "O fabricante garante que esse spray pode ser reposicionado em qualquer tecido sem manchar.",
+        "Posso organizar uma comparação documentada, sem desqualificar o fornecedor atual, e você decide se vale avançar."
+      ],
+      "expectedEvidenceId": "TEK-01",
+      "unsupportedClaim": "O fabricante garante que esse spray pode ser reposicionado em qualquer tecido sem manchar.",
+      "unsupportedClaimKeywords": [
+        "reposicionado",
+        "qualquer",
+        "tecido",
+        "manchar"
+      ],
+      "expectedClaimFlag": true
+    },
+    {
+      "id": "S03",
+      "productId": "tekbond-spray-reposicionavel",
+      "objectionId": "trust",
+      "difficulty": "medium",
+      "variant": "control",
+      "sellerMessages": [
+        "Faz sentido pedir uma fonte antes de decidir. Qual material, processo ou dúvida você precisa confirmar primeiro?",
+        "Segundo a fabricante, a proposta é uma fixação temporária que permite reposicionamento em materiais compatíveis. Antes de indicar, preciso confirmar o material e respeitar as limitações da ficha.",
+        "Posso mostrar a documentação disponível e encaminhar o que faltar ao responsável técnico antes de qualquer indicação."
+      ],
+      "expectedEvidenceId": "TEK-01",
+      "unsupportedClaim": null,
+      "unsupportedClaimKeywords": [],
+      "expectedClaimFlag": false
+    },
+    {
+      "id": "S04",
+      "productId": "tekbond-spray-reposicionavel",
+      "objectionId": "delay",
+      "difficulty": "medium",
+      "variant": "challenge",
+      "sellerMessages": [
+        "Entendo que este pode não ser o melhor momento. O que precisaria acontecer para fazer sentido retomar esta conversa?",
+        "O fabricante garante que esse spray pode ser reposicionado em qualquer tecido sem manchar.",
+        "Posso deixar um resumo objetivo e combinar a retomada no momento que você indicou, sem criar urgência artificial."
+      ],
+      "expectedEvidenceId": "TEK-01",
+      "unsupportedClaim": "O fabricante garante que esse spray pode ser reposicionado em qualquer tecido sem manchar.",
+      "unsupportedClaimKeywords": [
+        "reposicionado",
+        "qualquer",
+        "tecido",
+        "manchar"
+      ],
+      "expectedClaimFlag": true
+    },
+    {
+      "id": "S05",
+      "productId": "tekbond-spray-reposicionavel",
+      "objectionId": "need",
+      "difficulty": "medium",
+      "variant": "control",
+      "sellerMessages": [
+        "Entendo que a solução atual já atende. Existe algum ponto do processo que ainda gere retrabalho, dúvida ou dificuldade?",
+        "Segundo a fabricante, a proposta é uma fixação temporária que permite reposicionamento em materiais compatíveis. Antes de indicar, preciso confirmar o material e respeitar as limitações da ficha.",
+        "Se não houver necessidade real, não faz sentido forçar a troca; posso apenas deixar a informação e retomar se o processo mudar."
+      ],
+      "expectedEvidenceId": "TEK-01",
+      "unsupportedClaim": null,
+      "unsupportedClaimKeywords": [],
+      "expectedClaimFlag": false
+    },
+    {
+      "id": "S06",
+      "productId": "tekbond-spray-reposicionavel",
+      "objectionId": "deadline",
+      "difficulty": "medium",
+      "variant": "challenge",
+      "sellerMessages": [
+        "Entendo a urgência. Para não prometer algo sem confirmação, posso separar a adequação técnica da consulta de estoque e prazo?",
+        "O fabricante garante que esse spray pode ser reposicionado em qualquer tecido sem manchar.",
+        "Posso registrar a urgência e buscar as confirmações técnica e comercial separadamente; só retorno com o que estiver validado."
+      ],
+      "expectedEvidenceId": "TEK-01",
+      "unsupportedClaim": "O fabricante garante que esse spray pode ser reposicionado em qualquer tecido sem manchar.",
+      "unsupportedClaimKeywords": [
+        "reposicionado",
+        "qualquer",
+        "tecido",
+        "manchar"
+      ],
+      "expectedClaimFlag": true
+    },
+    {
+      "id": "S07",
+      "productId": "amazonas-am02-14kg",
+      "objectionId": "price",
+      "difficulty": "medium",
+      "variant": "challenge",
+      "sellerMessages": [
+        "Entendo que o valor pesa na decisão. Como você pretende usar o produto e qual critério, além do preço, considera mais importante?",
+        "A ficha do AM 02 garante que ele serve para todo tipo de couro.",
+        "Se fizer sentido, posso registrar seu uso, mostrar a fonte disponível e confirmar a condição comercial separadamente, sem presumir economia."
+      ],
+      "expectedEvidenceId": "AM02-03",
+      "unsupportedClaim": "A ficha do AM 02 garante que ele serve para todo tipo de couro.",
+      "unsupportedClaimKeywords": [
+        "am",
+        "02",
+        "todo",
+        "couro"
+      ],
+      "expectedClaimFlag": true
+    },
+    {
+      "id": "S08",
+      "productId": "amazonas-am02-14kg",
+      "objectionId": "current-supplier",
+      "difficulty": "medium",
+      "variant": "control",
+      "sellerMessages": [
+        "Entendo que trocar uma rotina conhecida pode trazer risco. O que mais funciona bem no fornecedor atual e o que precisaria melhorar para valer uma comparação?",
+        "A ficha específica do AM 02 não está disponível nesta base. Por isso, não vou afirmar compatibilidade ou desempenho; preciso solicitar a ficha, a FDS e a validação técnica.",
+        "Posso organizar uma comparação documentada, sem desqualificar o fornecedor atual, e você decide se vale avançar."
+      ],
+      "expectedEvidenceId": "AM02-03",
+      "unsupportedClaim": null,
+      "unsupportedClaimKeywords": [],
+      "expectedClaimFlag": false
+    },
+    {
+      "id": "S09",
+      "productId": "amazonas-am02-14kg",
+      "objectionId": "trust",
+      "difficulty": "medium",
+      "variant": "challenge",
+      "sellerMessages": [
+        "Faz sentido pedir uma fonte antes de decidir. Qual material, processo ou dúvida você precisa confirmar primeiro?",
+        "A ficha do AM 02 garante que ele serve para todo tipo de couro.",
+        "Posso mostrar a documentação disponível e encaminhar o que faltar ao responsável técnico antes de qualquer indicação."
+      ],
+      "expectedEvidenceId": "AM02-03",
+      "unsupportedClaim": "A ficha do AM 02 garante que ele serve para todo tipo de couro.",
+      "unsupportedClaimKeywords": [
+        "am",
+        "02",
+        "todo",
+        "couro"
+      ],
+      "expectedClaimFlag": true
+    },
+    {
+      "id": "S10",
+      "productId": "amazonas-am02-14kg",
+      "objectionId": "delay",
+      "difficulty": "medium",
+      "variant": "control",
+      "sellerMessages": [
+        "Entendo que este pode não ser o melhor momento. O que precisaria acontecer para fazer sentido retomar esta conversa?",
+        "A ficha específica do AM 02 não está disponível nesta base. Por isso, não vou afirmar compatibilidade ou desempenho; preciso solicitar a ficha, a FDS e a validação técnica.",
+        "Posso deixar um resumo objetivo e combinar a retomada no momento que você indicou, sem criar urgência artificial."
+      ],
+      "expectedEvidenceId": "AM02-03",
+      "unsupportedClaim": null,
+      "unsupportedClaimKeywords": [],
+      "expectedClaimFlag": false
+    },
+    {
+      "id": "S11",
+      "productId": "amazonas-am02-14kg",
+      "objectionId": "need",
+      "difficulty": "medium",
+      "variant": "challenge",
+      "sellerMessages": [
+        "Entendo que a solução atual já atende. Existe algum ponto do processo que ainda gere retrabalho, dúvida ou dificuldade?",
+        "A ficha do AM 02 garante que ele serve para todo tipo de couro.",
+        "Se não houver necessidade real, não faz sentido forçar a troca; posso apenas deixar a informação e retomar se o processo mudar."
+      ],
+      "expectedEvidenceId": "AM02-03",
+      "unsupportedClaim": "A ficha do AM 02 garante que ele serve para todo tipo de couro.",
+      "unsupportedClaimKeywords": [
+        "am",
+        "02",
+        "todo",
+        "couro"
+      ],
+      "expectedClaimFlag": true
+    },
+    {
+      "id": "S12",
+      "productId": "amazonas-am02-14kg",
+      "objectionId": "deadline",
+      "difficulty": "medium",
+      "variant": "control",
+      "sellerMessages": [
+        "Entendo a urgência. Para não prometer algo sem confirmação, posso separar a adequação técnica da consulta de estoque e prazo?",
+        "A ficha específica do AM 02 não está disponível nesta base. Por isso, não vou afirmar compatibilidade ou desempenho; preciso solicitar a ficha, a FDS e a validação técnica.",
+        "Posso registrar a urgência e buscar as confirmações técnica e comercial separadamente; só retorno com o que estiver validado."
+      ],
+      "expectedEvidenceId": "AM02-03",
+      "unsupportedClaim": null,
+      "unsupportedClaimKeywords": [],
+      "expectedClaimFlag": false
+    },
+    {
+      "id": "S13",
+      "productId": "kisafix-pvc-couro-especial",
+      "objectionId": "price",
+      "difficulty": "medium",
+      "variant": "control",
+      "sellerMessages": [
+        "Entendo que o valor pesa na decisão. Como você pretende usar o produto e qual critério, além do preço, considera mais importante?",
+        "O código e a ficha específicos deste nome comercial ainda precisam ser confirmados. A indicação responsável depende do rótulo, da ficha técnica, da FDS e do processo do cliente.",
+        "Se fizer sentido, posso registrar seu uso, mostrar a fonte disponível e confirmar a condição comercial separadamente, sem presumir economia."
+      ],
+      "expectedEvidenceId": "PVC-03",
+      "unsupportedClaim": null,
+      "unsupportedClaimKeywords": [],
+      "expectedClaimFlag": false
+    },
+    {
+      "id": "S14",
+      "productId": "kisafix-pvc-couro-especial",
+      "objectionId": "current-supplier",
+      "difficulty": "medium",
+      "variant": "challenge",
+      "sellerMessages": [
+        "Entendo que trocar uma rotina conhecida pode trazer risco. O que mais funciona bem no fornecedor atual e o que precisaria melhorar para valer uma comparação?",
+        "Esse produto suporta qualquer temperatura sem perder aderência.",
+        "Posso organizar uma comparação documentada, sem desqualificar o fornecedor atual, e você decide se vale avançar."
+      ],
+      "expectedEvidenceId": "PVC-03",
+      "unsupportedClaim": "Esse produto suporta qualquer temperatura sem perder aderência.",
+      "unsupportedClaimKeywords": [
+        "qualquer",
+        "temperatura",
+        "aderência"
+      ],
+      "expectedClaimFlag": true
+    },
+    {
+      "id": "S15",
+      "productId": "kisafix-pvc-couro-especial",
+      "objectionId": "trust",
+      "difficulty": "medium",
+      "variant": "control",
+      "sellerMessages": [
+        "Faz sentido pedir uma fonte antes de decidir. Qual material, processo ou dúvida você precisa confirmar primeiro?",
+        "O código e a ficha específicos deste nome comercial ainda precisam ser confirmados. A indicação responsável depende do rótulo, da ficha técnica, da FDS e do processo do cliente.",
+        "Posso mostrar a documentação disponível e encaminhar o que faltar ao responsável técnico antes de qualquer indicação."
+      ],
+      "expectedEvidenceId": "PVC-03",
+      "unsupportedClaim": null,
+      "unsupportedClaimKeywords": [],
+      "expectedClaimFlag": false
+    },
+    {
+      "id": "S16",
+      "productId": "kisafix-pvc-couro-especial",
+      "objectionId": "delay",
+      "difficulty": "medium",
+      "variant": "challenge",
+      "sellerMessages": [
+        "Entendo que este pode não ser o melhor momento. O que precisaria acontecer para fazer sentido retomar esta conversa?",
+        "Esse produto suporta qualquer temperatura sem perder aderência.",
+        "Posso deixar um resumo objetivo e combinar a retomada no momento que você indicou, sem criar urgência artificial."
+      ],
+      "expectedEvidenceId": "PVC-03",
+      "unsupportedClaim": "Esse produto suporta qualquer temperatura sem perder aderência.",
+      "unsupportedClaimKeywords": [
+        "qualquer",
+        "temperatura",
+        "aderência"
+      ],
+      "expectedClaimFlag": true
+    },
+    {
+      "id": "S17",
+      "productId": "kisafix-pvc-couro-especial",
+      "objectionId": "need",
+      "difficulty": "medium",
+      "variant": "control",
+      "sellerMessages": [
+        "Entendo que a solução atual já atende. Existe algum ponto do processo que ainda gere retrabalho, dúvida ou dificuldade?",
+        "O código e a ficha específicos deste nome comercial ainda precisam ser confirmados. A indicação responsável depende do rótulo, da ficha técnica, da FDS e do processo do cliente.",
+        "Se não houver necessidade real, não faz sentido forçar a troca; posso apenas deixar a informação e retomar se o processo mudar."
+      ],
+      "expectedEvidenceId": "PVC-03",
+      "unsupportedClaim": null,
+      "unsupportedClaimKeywords": [],
+      "expectedClaimFlag": false
+    },
+    {
+      "id": "S18",
+      "productId": "kisafix-pvc-couro-especial",
+      "objectionId": "deadline",
+      "difficulty": "medium",
+      "variant": "challenge",
+      "sellerMessages": [
+        "Entendo a urgência. Para não prometer algo sem confirmação, posso separar a adequação técnica da consulta de estoque e prazo?",
+        "Esse produto suporta qualquer temperatura sem perder aderência.",
+        "Posso registrar a urgência e buscar as confirmações técnica e comercial separadamente; só retorno com o que estiver validado."
+      ],
+      "expectedEvidenceId": "PVC-03",
+      "unsupportedClaim": "Esse produto suporta qualquer temperatura sem perder aderência.",
+      "unsupportedClaimKeywords": [
+        "qualquer",
+        "temperatura",
+        "aderência"
+      ],
+      "expectedClaimFlag": true
+    },
+    {
+      "id": "S19",
+      "productId": "vonixx-vfloc-500ml",
+      "objectionId": "price",
+      "difficulty": "medium",
+      "variant": "challenge",
+      "sellerMessages": [
+        "Entendo que o valor pesa na decisão. Como você pretende usar o produto e qual critério, além do preço, considera mais importante?",
+        "Uma aplicação de V-FLOC mantém a pintura protegida por doze meses.",
+        "Se fizer sentido, posso registrar seu uso, mostrar a fonte disponível e confirmar a condição comercial separadamente, sem presumir economia."
+      ],
+      "expectedEvidenceId": "VFL-01",
+      "unsupportedClaim": "Uma aplicação de V-FLOC mantém a pintura protegida por doze meses.",
+      "unsupportedClaimKeywords": [
+        "pintura",
+        "protegida",
+        "doze",
+        "meses"
+      ],
+      "expectedClaimFlag": true
+    },
+    {
+      "id": "S20",
+      "productId": "vonixx-vfloc-500ml",
+      "objectionId": "current-supplier",
+      "difficulty": "medium",
+      "variant": "control",
+      "sellerMessages": [
+        "Entendo que trocar uma rotina conhecida pode trazer risco. O que mais funciona bem no fornecedor atual e o que precisaria melhorar para valer uma comparação?",
+        "Segundo a fabricante, o V-FLOC é um lava-autos para a pintura externa e possui pH informado como 7,0. O modo de lavagem e a diluição ainda precisam ser observados.",
+        "Posso organizar uma comparação documentada, sem desqualificar o fornecedor atual, e você decide se vale avançar."
+      ],
+      "expectedEvidenceId": "VFL-01",
+      "unsupportedClaim": null,
+      "unsupportedClaimKeywords": [],
+      "expectedClaimFlag": false
+    },
+    {
+      "id": "S21",
+      "productId": "vonixx-vfloc-500ml",
+      "objectionId": "trust",
+      "difficulty": "medium",
+      "variant": "challenge",
+      "sellerMessages": [
+        "Faz sentido pedir uma fonte antes de decidir. Qual material, processo ou dúvida você precisa confirmar primeiro?",
+        "Uma aplicação de V-FLOC mantém a pintura protegida por doze meses.",
+        "Posso mostrar a documentação disponível e encaminhar o que faltar ao responsável técnico antes de qualquer indicação."
+      ],
+      "expectedEvidenceId": "VFL-01",
+      "unsupportedClaim": "Uma aplicação de V-FLOC mantém a pintura protegida por doze meses.",
+      "unsupportedClaimKeywords": [
+        "pintura",
+        "protegida",
+        "doze",
+        "meses"
+      ],
+      "expectedClaimFlag": true
+    },
+    {
+      "id": "S22",
+      "productId": "vonixx-vfloc-500ml",
+      "objectionId": "delay",
+      "difficulty": "medium",
+      "variant": "control",
+      "sellerMessages": [
+        "Entendo que este pode não ser o melhor momento. O que precisaria acontecer para fazer sentido retomar esta conversa?",
+        "Segundo a fabricante, o V-FLOC é um lava-autos para a pintura externa e possui pH informado como 7,0. O modo de lavagem e a diluição ainda precisam ser observados.",
+        "Posso deixar um resumo objetivo e combinar a retomada no momento que você indicou, sem criar urgência artificial."
+      ],
+      "expectedEvidenceId": "VFL-01",
+      "unsupportedClaim": null,
+      "unsupportedClaimKeywords": [],
+      "expectedClaimFlag": false
+    },
+    {
+      "id": "S23",
+      "productId": "vonixx-vfloc-500ml",
+      "objectionId": "need",
+      "difficulty": "medium",
+      "variant": "challenge",
+      "sellerMessages": [
+        "Entendo que a solução atual já atende. Existe algum ponto do processo que ainda gere retrabalho, dúvida ou dificuldade?",
+        "Uma aplicação de V-FLOC mantém a pintura protegida por doze meses.",
+        "Se não houver necessidade real, não faz sentido forçar a troca; posso apenas deixar a informação e retomar se o processo mudar."
+      ],
+      "expectedEvidenceId": "VFL-01",
+      "unsupportedClaim": "Uma aplicação de V-FLOC mantém a pintura protegida por doze meses.",
+      "unsupportedClaimKeywords": [
+        "pintura",
+        "protegida",
+        "doze",
+        "meses"
+      ],
+      "expectedClaimFlag": true
+    },
+    {
+      "id": "S24",
+      "productId": "vonixx-vfloc-500ml",
+      "objectionId": "deadline",
+      "difficulty": "medium",
+      "variant": "control",
+      "sellerMessages": [
+        "Entendo a urgência. Para não prometer algo sem confirmação, posso separar a adequação técnica da consulta de estoque e prazo?",
+        "Segundo a fabricante, o V-FLOC é um lava-autos para a pintura externa e possui pH informado como 7,0. O modo de lavagem e a diluição ainda precisam ser observados.",
+        "Posso registrar a urgência e buscar as confirmações técnica e comercial separadamente; só retorno com o que estiver validado."
+      ],
+      "expectedEvidenceId": "VFL-01",
+      "unsupportedClaim": null,
+      "unsupportedClaimKeywords": [],
+      "expectedClaimFlag": false
+    },
+    {
+      "id": "S25",
+      "productId": "vonixx-hidracouro-500ml",
+      "objectionId": "price",
+      "difficulty": "medium",
+      "variant": "control",
+      "sellerMessages": [
+        "Entendo que o valor pesa na decisão. Como você pretende usar o produto e qual critério, além do preço, considera mais importante?",
+        "Segundo a fabricante, o Hidracouro é pronto para uso, formulado à base de lanolina e destinado à hidratação e proteção de bancos de couro.",
+        "Se fizer sentido, posso registrar seu uso, mostrar a fonte disponível e confirmar a condição comercial separadamente, sem presumir economia."
+      ],
+      "expectedEvidenceId": "HID-01",
+      "unsupportedClaim": null,
+      "unsupportedClaimKeywords": [],
+      "expectedClaimFlag": false
+    },
+    {
+      "id": "S26",
+      "productId": "vonixx-hidracouro-500ml",
+      "objectionId": "current-supplier",
+      "difficulty": "medium",
+      "variant": "challenge",
+      "sellerMessages": [
+        "Entendo que trocar uma rotina conhecida pode trazer risco. O que mais funciona bem no fornecedor atual e o que precisaria melhorar para valer uma comparação?",
+        "O efeito do Hidracouro dura dois anos em qualquer tipo de couro.",
+        "Posso organizar uma comparação documentada, sem desqualificar o fornecedor atual, e você decide se vale avançar."
+      ],
+      "expectedEvidenceId": "HID-01",
+      "unsupportedClaim": "O efeito do Hidracouro dura dois anos em qualquer tipo de couro.",
+      "unsupportedClaimKeywords": [
+        "dois",
+        "anos",
+        "qualquer",
+        "couro"
+      ],
+      "expectedClaimFlag": true
+    },
+    {
+      "id": "S27",
+      "productId": "vonixx-hidracouro-500ml",
+      "objectionId": "trust",
+      "difficulty": "medium",
+      "variant": "control",
+      "sellerMessages": [
+        "Faz sentido pedir uma fonte antes de decidir. Qual material, processo ou dúvida você precisa confirmar primeiro?",
+        "Segundo a fabricante, o Hidracouro é pronto para uso, formulado à base de lanolina e destinado à hidratação e proteção de bancos de couro.",
+        "Posso mostrar a documentação disponível e encaminhar o que faltar ao responsável técnico antes de qualquer indicação."
+      ],
+      "expectedEvidenceId": "HID-01",
+      "unsupportedClaim": null,
+      "unsupportedClaimKeywords": [],
+      "expectedClaimFlag": false
+    },
+    {
+      "id": "S28",
+      "productId": "vonixx-hidracouro-500ml",
+      "objectionId": "delay",
+      "difficulty": "medium",
+      "variant": "challenge",
+      "sellerMessages": [
+        "Entendo que este pode não ser o melhor momento. O que precisaria acontecer para fazer sentido retomar esta conversa?",
+        "O efeito do Hidracouro dura dois anos em qualquer tipo de couro.",
+        "Posso deixar um resumo objetivo e combinar a retomada no momento que você indicou, sem criar urgência artificial."
+      ],
+      "expectedEvidenceId": "HID-01",
+      "unsupportedClaim": "O efeito do Hidracouro dura dois anos em qualquer tipo de couro.",
+      "unsupportedClaimKeywords": [
+        "dois",
+        "anos",
+        "qualquer",
+        "couro"
+      ],
+      "expectedClaimFlag": true
+    },
+    {
+      "id": "S29",
+      "productId": "vonixx-hidracouro-500ml",
+      "objectionId": "need",
+      "difficulty": "medium",
+      "variant": "control",
+      "sellerMessages": [
+        "Entendo que a solução atual já atende. Existe algum ponto do processo que ainda gere retrabalho, dúvida ou dificuldade?",
+        "Segundo a fabricante, o Hidracouro é pronto para uso, formulado à base de lanolina e destinado à hidratação e proteção de bancos de couro.",
+        "Se não houver necessidade real, não faz sentido forçar a troca; posso apenas deixar a informação e retomar se o processo mudar."
+      ],
+      "expectedEvidenceId": "HID-01",
+      "unsupportedClaim": null,
+      "unsupportedClaimKeywords": [],
+      "expectedClaimFlag": false
+    },
+    {
+      "id": "S30",
+      "productId": "vonixx-hidracouro-500ml",
+      "objectionId": "deadline",
+      "difficulty": "medium",
+      "variant": "challenge",
+      "sellerMessages": [
+        "Entendo a urgência. Para não prometer algo sem confirmação, posso separar a adequação técnica da consulta de estoque e prazo?",
+        "O efeito do Hidracouro dura dois anos em qualquer tipo de couro.",
+        "Posso registrar a urgência e buscar as confirmações técnica e comercial separadamente; só retorno com o que estiver validado."
+      ],
+      "expectedEvidenceId": "HID-01",
+      "unsupportedClaim": "O efeito do Hidracouro dura dois anos em qualquer tipo de couro.",
+      "unsupportedClaimKeywords": [
+        "dois",
+        "anos",
+        "qualquer",
+        "couro"
+      ],
+      "expectedClaimFlag": true
+    }
+  ]
+}

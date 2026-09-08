@@ -1,0 +1,50 @@
+{
+  "name": "rv-couros-tcc",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Protótipo web com IA generativa para treinamento de objeções comerciais, desenvolvido no contexto de TCC.",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "dev:server": "tsx --env-file=.env server/index.ts",
+    "build": "vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
+    "start": "node --env-file-if-exists=.env dist/index.js",
+    "build:render": "vite build && esbuild server/render.ts server/index.ts --platform=node --packages=external --external:./index.js --bundle --format=esm --outdir=dist",
+    "start:render": "node --env-file-if-exists=.env dist/render.js",
+    "check": "tsc --noEmit",
+    "test": "vitest run --root .",
+    "test:watch": "vitest --root .",
+    "eval:dataset": "tsx evaluation/generate-dataset.ts",
+    "eval:run": "tsx --env-file-if-exists=.env evaluation/run.ts",
+    "eval:preflight": "tsx evaluation/run.ts --preflight",
+    "eval:report": "tsx evaluation/report.ts",
+    "source:package": "tsx evaluation/package.ts"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "framer-motion": "^12.23.22",
+    "lucide-react": "^0.453.0",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "wouter": "^3.3.5",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.5",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@types/supertest": "^6.0.3",
+    "@vitejs/plugin-react": "latest",
+    "esbuild": "^0.27.0",
+    "supertest": "^7.1.4",
+    "tsx": "^4.20.6",
+    "typescript": "^5.7.2",
+    "vite": "latest",
+    "vitest": "^2.1.8"
+  },
+  "packageManager": "pnpm@10.4.1"
+}
